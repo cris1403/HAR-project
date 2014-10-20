@@ -7,20 +7,17 @@ fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%2
 td = tempdir()                            # create a temporary directory
 tf = tempfile(tmpdir=td, fileext=".zip")  # create a tempfile
 
-# download the zip file
-download.file(fileUrl, destfile=tf, mode="wb")
+download.file(fileUrl, destfile=tf, mode="wb")  # download the zip file
+fname = unzip(tf, list=TRUE)$Name               # get the name of the files in the zip archive
+unzip(tf, files=fname, exdir="../HAR-data", overwrite=TRUE) # unzip the file to a directory
 
-# get the name of the files in the zip archive
-fname = unzip(tf, list=TRUE)$Name
-
-# unzip the file to a directory
-unzip(tf, files=fname, overwrite=TRUE)
+rm(td, tf)                                # remove unnecessary stuff
 
 ############################################
 # 1. Merge training and test sets 
 ############################################
 
-dataFolder = "./UCI HAR Dataset"
+dataFolder = "../HAR-data/UCI HAR Dataset"
 
 XTrain = read.table(paste(dataFolder, "/train/X_train.txt", sep=""))
 XTest = read.table(paste(dataFolder, "/test/X_test.txt", sep=""))
