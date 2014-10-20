@@ -76,11 +76,12 @@ classLabels = read.table(paste(dataFolder, "/activity_labels.txt", sep=""))
 classLabels[, 2] = gsub("_", " ", tolower(as.character(classLabels[, 2])))
 
 actlabel = classLabels[YData[,1],2]
-YData[,1] = actlabel
+YData[,1] = factor(actlabel)
 names(YData) = "activity"
 names(SubjectData) = "subId"
 
 merged = cbind(SubjectData, YData, XData)
+merged$subId = factor(merged$subId)
 write.table(merged, "tidy_data.txt", row.name=FALSE)
 
 ##############################################################################
