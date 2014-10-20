@@ -31,9 +31,9 @@ YData = rbind(YTrain, YTest)
 
 rm(YTrain, YTest)
 
-subjectTrain <- read.table(paste(dataFolder, "/train/subject_train.txt", sep=""))
-subjectTest <- read.table(paste(dataFolder, "/test/subject_test.txt", sep=""))
-SubjectData <- rbind(subjectTrain, subjectTest)
+subjectTrain = read.table(paste(dataFolder, "/train/subject_train.txt", sep=""))
+subjectTest = read.table(paste(dataFolder, "/test/subject_test.txt", sep=""))
+SubjectData = rbind(subjectTrain, subjectTest)
 
 rm(subjectTrain, subjectTest)
 
@@ -50,10 +50,18 @@ selectedFeatures = grep("-mean\\(\\)|-std\\(\\)", features[, 2])
 # extract data only for those features
 XData = XData[,selectedFeatures]
 
-# tidy column names
-names(XData) <- features[selectedFeatures, 2]
-names(XData) <- gsub("\\(|\\)", "", names(XData))
-names(XData) <- tolower(names(XData))
+# column names: use descriptive feature names
+names(XData) = features[selectedFeatures, 2]
+names(XData) = gsub("\\(|\\)", "", names(XData))
+names(XData) = gsub("\\-", "", names(XData))
+names(XData) = tolower(names(XData))
+
+names(XData) = gsub("^t", "time", names(XData))
+names(XData) = gsub("^f", "fastfouriertransform", names(XData))
+names(XData) = gsub("acc", "acceleration", names(XData))
+names(XData) = gsub("gyro", "gyroscope", names(XData))
+names(XData) = gsub("mag", "magnitude", names(XData))
+names(XData) = gsub("std", "standarddeviation", names(XData))
 
 ###########################################################################
 # 3. Uses descriptive activity names to name the activities in the data set
@@ -66,7 +74,9 @@ classLabels = read.table(paste(dataFolder, "/activity_labels.txt", sep=""))
 ###########################################################################
 
 classLabels[, 2] = gsub("_", " ", tolower(as.character(classLabels[, 2])))
-YData[,1] = classLabels[YData[,1], 2]
+
+actlabel = classLabels[YData[,1],2]
+YData[,1] = actlabel
 names(YData) = "activity"
 names(SubjectData) = "subId"
 
