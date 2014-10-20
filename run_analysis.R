@@ -80,6 +80,7 @@ YData[,1] = factor(actlabel)
 names(YData) = "activity"
 names(SubjectData) = "subId"
 
+# merge subject id, class variable and features datasets
 merged = cbind(SubjectData, YData, XData)
 merged$subId = factor(merged$subId)
 write.table(merged, "tidy_data.txt", row.name=FALSE)
