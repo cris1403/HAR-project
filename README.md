@@ -19,7 +19,7 @@ As stated in the  [UCI Machine Learning Repository web page](http://archive.ics.
 
 The script "run_analysis.R" does the following:
 
-1. Download and unzip the the original dataset, which includes - among the others - the following files:  
+1. Download into a directory named "HAR-data" and unzip the original dataset "UCI HAR Dataset", which includes two subfolders ("train" and "test") and files. Here you find the ones we have considered during the analysis:  
 a) 'activity_labels.txt': Links the class labels with their activity name.  
 b) 'train/X_train.txt': Training set.  
 c) 'train/y_train.txt': Training labels.  
