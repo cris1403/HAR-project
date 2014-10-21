@@ -29,7 +29,7 @@ f) 'train/subject_train.txt': Each row identifies the subject who performed the 
 g) 'test/subject_test.txt': The same as above.  
 h) 'features.txt': List of all features.  
 
-2. We bind training set and test set data regarding features (b+d), class variable (c+e) and subjects (f+g).
+2. We bind training set and test set data regarding features ("b)"+"d)"), class variable ("c)"+"e)") and subjects ("f)"+"g)").
 3. Now the dataset has 561 features, but we have been told to take into account only features regarding mean and standard deviation for each measurement: so from file "h)" we extract features which include mean or std in their name. We obtain a dataset with only 66 variables.
 4. Then we build descriptive column names: all lower case, descriptive, don't have underscores or dots or white spaces.
 5. We want to use descriptive activity names so we take file "a)" to name the activities in the dataset and we also check that variables with character values are made into factor variables.
