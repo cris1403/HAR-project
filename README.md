@@ -29,14 +29,14 @@ f) 'train/subject_train.txt': Each row identifies the subject who performed the 
 g) 'test/subject_test.txt': The same as above.  
 h) 'features.txt': List of all features.  
 
-2. Merge training set and test set data regarding features (b+d), class variable (c+e) and subjects (f+g).
-3. The dataset has 561 features, but we want to take into account only features regarding mean standard deviation for each measurement: so from file "h)" we extract features names which have mean or std in their name. We obtain a dataset with only 66 features.
+2. We bind training set and test set data regarding features (b+d), class variable (c+e) and subjects (f+g).
+3. Now the dataset has 561 features, but we have been told to take into account only features regarding mean and standard deviation for each measurement: so from file "h)" we extract features which include mean or std in their name. We obtain a dataset with only 66 variables.
 4. Then we build descriptive column names: all lower case, descriptive, don't have underscores or dots or white spaces.
-5. Use descriptive activity names, using file "a)" to name the activities in the data set and appropriately labels the data set with descriptive variable names (variables with character values should usually be made into factor variables).
+5. We want to use descriptive activity names so we take file "a)" to name the activities in the dataset and we also check that variables with character values are made into factor variables.
 6. Eventually we bind subject id, class variable and features datasets from previous steps in a dataset named "tidy_data.txt".
 7. From the dataset in step 6, we create a second, independent tidy data set with the average of each variable for each activity and each subject, named "avg_data.txt".
 
 
-Two output files are generated in the current working directory:  
+Two output files are generated in the current working directory:
 * "tidy_data.txt" (8.1 Mb): it contains a data frame called "merged" with 10299 rows and 68 variables.  
 * "avg_data.txt" (221 Kb): it contains a data frame called "result" with 180 rows and 68 variables.  
