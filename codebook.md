@@ -7,7 +7,7 @@ HAR-project - CODEBOOK
   
   
 **subId**  
-- Volunteers ID who participated the experiment  
+  Volunteers ID who participated the experiment  
   
  25     : 409  
  21     : 408  
@@ -18,7 +18,7 @@ HAR-project - CODEBOOK
  Other  :7944  
  
 **activity**  
-- Activity performed by each subject wearing a smartphone  
+  Activity performed by each subject wearing a smartphone  
 
  laying            :1944  
  sitting           :1777  
@@ -27,9 +27,9 @@ HAR-project - CODEBOOK
  walking downstairs:1406  
  walking upstairs  :1544  
                           
-**timebodyaccelerationmeanx**
-**timebodyaccelerationmeany**
-**timebodyaccelerationmeanz**
+**timebodyaccelerationmeanx**  
+**timebodyaccelerationmeany**  
+**timebodyaccelerationmeanz**  
 - body acceleration mean value (time domain) XYZ-space  
 
 **timebodyaccelerationstandarddeviationx**  
