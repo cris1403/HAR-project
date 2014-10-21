@@ -1,13 +1,14 @@
-CODEBOOK
--------------
-HAR-project
+HAR-project - CODEBOOK
 -------------
 
 ##### Getting and Cleaning Data Course Project
 ###### Session October 2014
-
-
-##### subId - Volunteers ID who participated the experiment  
+  
+  
+  
+##### subId  
+- Volunteers ID who participated the experiment  
+  
  25     : 409  
  21     : 408  
  26     : 392  
@@ -16,7 +17,9 @@ HAR-project
  24     : 381  
  Other  :7944  
  
-##### activity - Activity performed by each subject wearing a smartphone  
+##### activity  
+- Activity performed by each subject wearing a smartphone  
+
  laying            :1944  
  sitting           :1777  
  standing          :1906  
@@ -24,9 +27,9 @@ HAR-project
  walking downstairs:1406  
  walking upstairs  :1544  
                           
-##### timebodyaccelerationmeanx  
-##### timebodyaccelerationmeany  
-##### timebodyaccelerationmeanz  
+##### timebodyaccelerationmeanx
+##### timebodyaccelerationmeany
+##### timebodyaccelerationmeanz
 - body acceleration mean value (time domain) XYZ-space  
 
 ##### timebodyaccelerationstandarddeviationx  
