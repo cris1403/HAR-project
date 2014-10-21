@@ -86,7 +86,7 @@ Body acceleration magnitude standard deviation value (time domain)
 **timegravityaccelerationmagnitudemean**  
 Gravity acceleration magnitude mean value (time domain)  
 
-**timegravityaccelerationmagnitudestandarddeviation**
+**timegravityaccelerationmagnitudestandarddeviation**  
 Gravity acceleration magnitude standard deviation value (time domain)  
 
 **timebodyaccelerationjerkmagnitudemean**  
@@ -98,38 +98,38 @@ Body acceleration Jerk signal magnitude standard deviation value (time domain)
 **timebodygyroscopemagnitudemean**  
 Body angular speed magnitude mean value (time domain)  
 
-**timebodygyroscopemagnitudestandarddeviation**
+**timebodygyroscopemagnitudestandarddeviation**  
 Body angular speed magnitude standard deviation value (time domain)  
 
 **timebodygyroscopejerkmagnitudemean**  
 Body angular speed Jerk signal mean value (time domain)  
 
-**timebodygyroscopejerkmagnitudestandarddeviation**
- body angular speed Jerk signal standard deviation value (time domain)  
+**timebodygyroscopejerkmagnitudestandarddeviation**  
+body angular speed Jerk signal standard deviation value (time domain)  
 
-**fastfouriertransformbodyaccelerationmeanx**
-**fastfouriertransformbodyaccelerationmeany**
-**fastfouriertransformbodyaccelerationmeanz**
+**fastfouriertransformbodyaccelerationmeanx**  
+**fastfouriertransformbodyaccelerationmeany**  
+**fastfouriertransformbodyaccelerationmeanz**  
 Body acceleration mean value XYZ-space (frequency domain)  
 
-**fastfouriertransformbodyaccelerationstandarddeviationx**
-**fastfouriertransformbodyaccelerationstandarddeviationy**
-**fastfouriertransformbodyaccelerationstandarddeviationz**
+**fastfouriertransformbodyaccelerationstandarddeviationx**  
+**fastfouriertransformbodyaccelerationstandarddeviationy**  
+**fastfouriertransformbodyaccelerationstandarddeviationz**  
 Body acceleration standard deviation value XYZ-space (frequency domain)  
 
-**fastfouriertransformbodyaccelerationjerkmeanx**
-**fastfouriertransformbodyaccelerationjerkmeany**
-**fastfouriertransformbodyaccelerationjerkmeanz**
+**fastfouriertransformbodyaccelerationjerkmeanx**  
+**fastfouriertransformbodyaccelerationjerkmeany**  
+**fastfouriertransformbodyaccelerationjerkmeanz**  
 Body acceleration Jerk signal mean value XYZ-space (frequency domain)  
 
-**fastfouriertransformbodyaccelerationjerkstandarddeviationx**
-**fastfouriertransformbodyaccelerationjerkstandarddeviationy**
-**fastfouriertransformbodyaccelerationjerkstandarddeviationz**
+**fastfouriertransformbodyaccelerationjerkstandarddeviationx**  
+**fastfouriertransformbodyaccelerationjerkstandarddeviationy**  
+**fastfouriertransformbodyaccelerationjerkstandarddeviationz**  
 Body acceleration Jerk signal standard deviation value XYZ-space (frequency domain)  
 
-**fastfouriertransformbodygyroscopemeanx**
-**fastfouriertransformbodygyroscopemeany**
-**fastfouriertransformbodygyroscopemeanz**
+**fastfouriertransformbodygyroscopemeanx**  
+**fastfouriertransformbodygyroscopemeany**  
+**fastfouriertransformbodygyroscopemeanz**  
 Body angular speed mean value (frequency domain)  
 
 **fastfouriertransformbodygyroscopestandarddeviationx**  
