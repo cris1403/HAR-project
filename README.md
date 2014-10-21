@@ -20,15 +20,15 @@ As stated in the  [UCI Machine Learning Repository web page](http://archive.ics.
 
 The script "run_analysis.R" does the following:
 
-1. Download and unzip the the original dataset, which includes - among the others - the following files:
-a) 'activity_labels.txt': Links the class labels with their activity name.
-b) 'train/X_train.txt': Training set.
-c) 'train/y_train.txt': Training labels.
-d) 'test/X_test.txt': Test set.
-e) 'test/y_test.txt': Test labels.
+1. Download and unzip the the original dataset, which includes - among the others - the following files:  
+a) 'activity_labels.txt': Links the class labels with their activity name.  
+b) 'train/X_train.txt': Training set.  
+c) 'train/y_train.txt': Training labels.  
+d) 'test/X_test.txt': Test set.  
+e) 'test/y_test.txt': Test labels.  
 f) 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.  
-g) 'test/subject_test.txt': The same as above.
-h) 'features.txt': List of all features.
+g) 'test/subject_test.txt': The same as above.  
+h) 'features.txt': List of all features.  
 
 2. Merge training set and test set data regarding features (b+d), class variable (c+e) and subjects (f+g).
 3. The dataset has 561 features, but we want to take into account only features regarding mean standard deviation for each measurement: so from file "h)" we extract features names which have mean or std in their name. We obtain a dataset with only 66 features.
@@ -38,6 +38,6 @@ h) 'features.txt': List of all features.
 7. From the dataset in step 6, we create a second, independent tidy data set with the average of each variable for each activity and each subject, named "avg_data.txt".
 
 
-Two output files are generated in the current working directory:
-* "tidy_data.txt" (8.1 Mb): it contains a data frame called "merged" with 10299 rows and 68 variables.
-* "avg_data.txt" (221 Kb): it contains a data frame called "result" with 180 rows and 68 variables.
+Two output files are generated in the current working directory:  
+* "tidy_data.txt" (8.1 Mb): it contains a data frame called "merged" with 10299 rows and 68 variables.  
+* "avg_data.txt" (221 Kb): it contains a data frame called "result" with 180 rows and 68 variables.  
