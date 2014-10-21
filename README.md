@@ -10,7 +10,7 @@ The purpose of this project is to collect, work with, and clean a data set. The 
 The original dataset comes from an experiment carried out with a group of 30 subjects. Each person performed six activities (laying, sitting, standing, walk, walk down, walk up) wearing a smartphone on the waist. The experiments have been video-recorded to label the data manually.
 The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
-As stated in the UCI Machine Learning Repository web page, for each record in the dataset it is provided:
+As stated in the  [UCI Machine Learning Repository web page](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones "Title"), for each record in the dataset it is provided:
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial angular velocity from the gyroscope.
