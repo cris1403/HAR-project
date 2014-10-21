@@ -1,9 +1,8 @@
 HAR-project
-===========
-Getting and Cleaning Data Course Project
-----------------------------------------
+-------------
 
-### Session October 2014
+#### Getting and Cleaning Data Course Project
+##### Session October 2014
 
 The purpose of this project is to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. Data are collected from the Samsung Galaxy S smartphone's accelerometers and gyroscopes. 
 
