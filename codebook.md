@@ -137,22 +137,22 @@ Body angular speed mean value (frequency domain)
 **fastfouriertransformbodygyroscopestandarddeviationz**  
 Body angular speed standard deviation value (frequency domain)  
 
-**fastfouriertransformbodyaccelerationmagnitudemean**
+**fastfouriertransformbodyaccelerationmagnitudemean**  
 Body acceleration magnitude mean value (frequency domain)  
 
-**fastfouriertransformbodyaccelerationmagnitudestandarddeviation**
+**fastfouriertransformbodyaccelerationmagnitudestandarddeviation**  
 Body acceleration magnitude standard deviation value (frequency domain)  
 
-**fastfouriertransformbodybodyaccelerationjerkmagnitudemean**
+**fastfouriertransformbodybodyaccelerationjerkmagnitudemean**  
 Body acceleration Jerk magnitude mean value (frequency domain)  
 
-**fastfouriertransformbodybodyaccelerationjerkmagnitudestandarddeviation**
+**fastfouriertransformbodybodyaccelerationjerkmagnitudestandarddeviation**  
 Body acceleration Jerk magnitude standard deviation value (frequency domain)  
 
-**fastfouriertransformbodybodygyroscopemagnitudemean**
+**fastfouriertransformbodybodygyroscopemagnitudemean**  
 Body angular speed magnitude mean value (frequency domain)  
 
-**fastfouriertransformbodybodygyroscopemagnitudestandarddeviation**
+**fastfouriertransformbodybodygyroscopemagnitudestandarddeviation**  
 Body angular speed magnitude standard deviation value (frequency domain)  
 
 **fastfouriertransformbodybodygyroscopejerkmagnitudemean**  
@@ -161,4 +161,4 @@ Body angular speed Jerk magnitude mean value (frequency domain)
 **fastfouriertransformbodybodygyroscopejerkmagnitudestandarddeviation**  
 Body angular speed Jerk magnitude mean value (frequency domain)  
 
-- Quantitative features are normalized and bounded within [-1,1].
+- Quantitative features are normalized and bounded within [-1,1].  
