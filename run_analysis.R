@@ -8,6 +8,7 @@ td = tempdir()                            # create a temporary directory
 tf = tempfile(tmpdir=td, fileext=".zip")  # create a tempfile
 
 download.file(fileUrl, destfile=tf, mode="wb")  # download the zip file
+
 fname = unzip(tf, list=TRUE)$Name               # get the name of the files in the zip archive
 unzip(tf, files=fname, exdir="../HAR-data", overwrite=TRUE) # unzip the file to a directory
 
@@ -90,9 +91,14 @@ write.table(merged, "tidy_data.txt", row.name=FALSE)
 #    with the average of each variable for each activity and each subject.
 ##############################################################################
 
-library(plyr)
-excludedColumns = which(names(merged) %in% c("subId", "activity"))
-result = ddply(merged, .(subId, activity), .fun=function(x){colMeans(x[,-excludedColumns])})
+# library(plyr)
+# excludedColumns = which(names(merged) %in% c("subId", "activity"))
+# result = ddply(merged, .(subId, activity), .fun=function(x){colMeans(x[,-excludedColumns])})
+
+library(dplyr)
+result = merged %>%
+          group_by(subId, activity) %>%
+          summarise_each(funs(mean))
 
 write.table(result, "avg_data.txt", row.name=FALSE)
 
